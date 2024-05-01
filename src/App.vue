@@ -32,14 +32,14 @@
         </a>
       </div>
       <div class="alert alert-light m-0 p-3 border-bottom" role="alert">
-        <a style="text-decoration: none" class="text-dark navi" href="">
-          <i class="fa-solid fa-envelope me-2"></i>Surat Masuk
-        </a>
+        <router-link style="text-decoration: none" class="text-dark navi" to="/in">
+          <i class="fa-solid fa-envelope me-2"></i>Telegram Masuk
+        </router-link>
       </div>
       <div class="alert alert-light m-0 p-3 border-bottom" role="alert">
-        <a style="text-decoration: none" class="text-dark navi" href="">
-          <i class="fa-solid fa-envelope-open me-2"></i>Surat Keluar
-        </a>
+        <router-link style="text-decoration: none" class="text-dark navi" to="/out">
+          <i class="fa-solid fa-envelope-open me-2"></i>Telegram Keluar
+        </router-link>
       </div>
     </div>
     <div class="col-md-10" style="padding: 0 !important;">
@@ -57,9 +57,6 @@
               <li class="nav-item"><router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
@@ -69,7 +66,12 @@
           </div>
         </div>
       </nav>
-      <router-view />
+      
+      <div class="container p-5 pt-3">
+        <small class="text-muted d-inline-block mb-5" style="text-transform: capitalize !important
+        ;width: 150px;">CV. JAYA MAKMUR SENTOSA ABADI JAYA</small>
+        <router-view />
+      </div>
     </div>
   </div>
 </template>
